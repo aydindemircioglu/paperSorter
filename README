@@ -1,0 +1,28 @@
+paperSorter v0.1
+	by aydin demircioglu, 2014
+	
+this small utility will query google to try to determine author and name a given pdf of a (scientific) paper.
+
+requirements:
+	python
+		pdfminer
+		PDFDocument
+		unidecode
+	
+	install the needed modules via
+	
+# sudo pip install pdfminer
+# sudo pip install PDFDocument
+# sudo pip install unidecode
+
+	(drop sudo, if not root)
+	
+
+problems/todos:
+	-google scholar will at some point claim that the script is a robot and refuse to provide information.
+		no clear workaround. need either proxies or better query script
+	-renaming is fixed
+		it will always be name_title.pdf
+	-works only in local path
+		renaming will put things into local path, so execute at '.' to avoid moving the files
+	
